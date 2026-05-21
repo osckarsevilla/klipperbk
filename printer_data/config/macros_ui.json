@@ -21,6 +21,7 @@
       "fluidd_color": "#4CAF50",
       "macros": [
         "CALIBRAR_TODO",
+        "CALIBRAR_COMPLETO",
         "CALIBRAR_Z",
         "CALIBRAR_CAMA",
         "BLTOUCH_TEST"
