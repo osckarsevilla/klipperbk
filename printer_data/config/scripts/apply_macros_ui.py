@@ -114,9 +114,7 @@ def main() -> None:
     base = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_MOONRAKER
     cfg = json.loads(CONFIG_PATH.read_text())
 
-    mainsail_db = get_namespace(base, "mainsail")
-    mainsail_db["macros"] = build_mainsail_macros(cfg)
-    post_item(base, "mainsail", "macros", mainsail_db["macros"])
+    post_item(base, "mainsail", "macros", build_mainsail_macros(cfg))
     print("✓ Mainsail: grupos de macros aplicados (modo Expert)")
 
     fluidd_existing = get_namespace(base, "fluidd").get("macros", {})
