@@ -4,7 +4,7 @@
 [crowsnest]
 log_level: verbose
 rollover_on_start: false
-no_proxy: true
+no_proxy: false
 log_path: ~/printer_data/logs/crowsnest.log
 delete_log: false
 
@@ -19,12 +19,12 @@ max_fps: 15
 
 
 
-#[cam usb3]
-#mode: camera-streamer
-#port: 8080
-#device: /dev/v4l/by-id/usb-GENERAL_GENERAL_WEBCAM_JH0319_20210712_v102-video-index0
-#resolution: 1920x1080
-#max_fps: 15
+[cam usb3]
+mode: camera-streamer
+port: 8080
+device: /dev/v4l/by-id/usb-GENERAL_GENERAL_WEBCAM_JH0319_20210712_v102-video-index0
+resolution: 1920x1080
+max_fps: 15
 
 
 
